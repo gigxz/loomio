@@ -15,7 +15,7 @@ describe API::B1::DiscussionsController do
         name: 'group admin bot',
         permissions: ['create_discussion']
       )
-      post :create, params: { title: 'test', group_id: group.id, api_key: webhook.token }
+      post :create, params: { title: 'test', group_id: group.id, recipient_audience: 'group', api_key: webhook.token }
       expect(response.status).to eq 200
       json = JSON.parse response.body
       discussion = json['discussions'][0]
