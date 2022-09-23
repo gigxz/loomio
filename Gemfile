@@ -39,7 +39,7 @@ gem 'sprockets-rails', require: 'sprockets/railtie'
 gem 'uglifier'
 gem 'sass-rails'
 gem 'uuidtools'
-gem 'geocoder', '1.6.7'
+gem 'geocoder', '1.8.1'
 gem 'maxminddb'
 gem 'oj'
 gem "cld"
